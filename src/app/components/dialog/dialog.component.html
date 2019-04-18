@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>Descripción</h2>
+
+<mat-dialog-content>
+  <div *ngIf="dataToShow">
+    <ul>
+      <li *ngFor="let item of dataToShow | keyvalue">
+        {{item.key | titlecase}}: {{item.value}}
+      </li>
+    </ul>
+  </div>
+</mat-dialog-content>
+
+<!--mat-dialog-actions>
+  
+</mat-dialog-actions-->
